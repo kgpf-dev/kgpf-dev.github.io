@@ -40,11 +40,11 @@ const THEME_OVERRIDES: ThemeOverrides = {
 }
 
 export default defineNuxtConfig({
-  ssr: true,
+  // ssr: true,
   nitro: {
-    prerender: {
-      crawlLinks: true,
-    },
+    // prerender: {
+    //   crawlLinks: true,
+    // },
     preset: 'github-pages',
   },
   modules: [
