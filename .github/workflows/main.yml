@@ -19,7 +19,7 @@ jobs:
 
       # Pick your own package manager and build script
       - run: pnpm install
-      - run: pnpm run build
+      - run: pnpm run generate
         env:
           NITRO_PRESET: github-pages
 
