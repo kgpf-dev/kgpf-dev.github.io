@@ -30,7 +30,7 @@
         >
           <div class="relative px-32 flex flex-col sm:flex-row gap-2 sm:gap-8 items-center justify-between">
             <transition-group name="header">
-              <n-el v-if="!isHome" key="logo" class="left-0">
+              <n-el key="logo" class="left-0">
                 <nuxt-link to="/" @click="menuSelection = null">
                   <logo-small />
                 </nuxt-link>
@@ -113,10 +113,10 @@ import {
 } from '@vicons/tabler'
 import { NuxtLink } from '#components'
 
-const { page } = useContent()
+// const { page } = useContent()
 
 const menuSelection = ref<string | null>(null)
-const isHome = computed(() => page.value?._path === '/')
+// const isHome = computed(() => page.value?._path === '/')
 
 // const hueRotate = ref(0)
 // const hueRotateDeg = computed(() => `${hueRotate.value}deg`)
