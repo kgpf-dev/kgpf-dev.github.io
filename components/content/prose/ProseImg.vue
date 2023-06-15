@@ -4,15 +4,15 @@
     :alt="alt"
     :width="width"
     :height="height"
-    :style="{ filter: `hue-rotate(${hueRotateDeg})`}"
   >
 </template>
+<!-- :style="{ filter: `hue-rotate(${hueRotateDeg})`}" -->
 
 <script setup lang="ts">
 import { withBase } from 'ufo'
 import { useRuntimeConfig, computed } from '#imports'
 
-const hueRotateDeg = inject('hueRotateDeg')
+// const hueRotateDeg = inject('hueRotateDeg')
 
 const props = defineProps({
   src: {

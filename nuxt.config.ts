@@ -39,6 +39,14 @@ const THEME_OVERRIDES: ThemeOverrides = {
     itemIconColorHoverHorizontal: SECONDARY_COLOR,
     itemTextColorActiveHorizontal: SECONDARY_COLOR,
     itemIconColorActiveHorizontal: SECONDARY_COLOR,
+    itemTextColorActiveHoverHorizontal: SECONDARY_COLOR,
+    itemIconColorActiveHoverHorizontal: SECONDARY_COLOR,
+    itemTextColorChildActiveHorizontal: SECONDARY_COLOR,
+    itemIconColorChildActiveHorizontal: SECONDARY_COLOR,
+    itemTextColorChildActiveHoverHorizon: SECONDARY_COLOR,
+    itemIconColorChildActiveHoverHorizon: SECONDARY_COLOR,
+    itemTextColorChildActiveHoverHorizontal: SECONDARY_COLOR,
+    itemIconColorChildActiveHoverHorizontal: SECONDARY_COLOR,
   },
 }
 

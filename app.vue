@@ -1,4 +1,5 @@
 <template>
+  <!-- <client-only> -->
   <!-- <n-theme-editor> -->
   <n-config-provider>
     <n-global-style />
@@ -82,22 +83,24 @@
             </n-text>
           </div>
         </div>
-        <div class="fixed top-0 left-0 p-1 w-[200px] group">
-          <n-slider
-            v-model:value="hueRotate"
-            :min="0"
-            :max="180"
-            class="transition opacity-0 group-hover:opacity-100"
-          />
-        </div>
+        <!-- <div class="fixed top-0 left-0 p-1 w-[200px] group"> -->
+        <!--   <n-slider -->
+        <!--     v-model:value="hueRotate" -->
+        <!--     :min="0" -->
+        <!--     :max="180" -->
+        <!--     class="transition opacity-0 group-hover:opacity-100" -->
+        <!--   /> -->
+        <!-- </div> -->
       </n-el>
     </n-message-provider>
   </n-config-provider>
   <!-- </n-theme-editor> -->
+  <!-- </client-only> -->
 </template>
 <script lang="ts" setup>
 import type { MenuOption } from 'naive-ui'
 import { NIcon, NThemeEditor } from 'naive-ui'
+// import { NIcon } from 'naive-ui'
 import {
   // Main
   BuildingBank as ServicesIcon,
@@ -115,9 +118,9 @@ const { page } = useContent()
 const menuSelection = ref<string | null>(null)
 const isHome = computed(() => page.value?._path === '/')
 
-const hueRotate = ref(0)
-const hueRotateDeg = computed(() => `${hueRotate.value}deg`)
-provide('hueRotateDeg', hueRotateDeg)
+// const hueRotate = ref(0)
+// const hueRotateDeg = computed(() => `${hueRotate.value}deg`)
+// provide('hueRotateDeg', hueRotateDeg)
 
 const iconRenderer = (icon: Component) => () => h(NIcon, null, { default: () => h(icon) })
 const linkRenderer = (to: string, text: string) => () => h(NuxtLink, { to }, { default: () => text })
