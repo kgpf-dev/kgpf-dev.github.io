@@ -41,7 +41,12 @@ const THEME_OVERRIDES: ThemeOverrides = {
 
 export default defineNuxtConfig({
   ssr: true,
-  nitro: { preset: 'github-pages' },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+    },
+    preset: 'github-pages',
+  },
   modules: [
     '@nuxt/content',
     '@huntersofbook/naive-ui-nuxt',
