@@ -40,7 +40,7 @@ const THEME_OVERRIDES: ThemeOverrides = {
 }
 
 export default defineNuxtConfig({
-  // ssr: true,
+  ssr: false,
   nitro: {
     // prerender: {
     //   crawlLinks: true,
