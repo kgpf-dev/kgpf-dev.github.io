@@ -54,7 +54,9 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     // 'vue-recaptcha/nuxt',
   ],
-  content: { documentDriven: true },
+  content: {
+    documentDriven: true,
+  },
   css: ['@unocss/reset/tailwind-compat.css'],
   app: { pageTransition: { name: 'page', mode: 'out-in' } },
   naiveUI: {

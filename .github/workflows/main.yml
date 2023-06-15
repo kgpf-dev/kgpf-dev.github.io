@@ -21,8 +21,9 @@ jobs:
       - run: pnpm install
       # - run: pnpm run build
       - run: pnpm run generate
-        # env:
-        #   NITRO_PRESET: github-pages
+        env:
+          # NITRO_PRESET: github-pages
+          NITRO_PRESET: service-worker
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
