@@ -3,7 +3,7 @@
     <span key="K" class="text-kgpf-yellow">
       KG
     </span>
-    <span key="PF" class="text-white, transition-all group-hover:ml-2">
+    <span key="PF" class="text-white transition-all group-hover:ml-2">
       PF
     </span>
   </div>
