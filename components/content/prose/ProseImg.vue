@@ -1,19 +1,8 @@
 <template>
-  <img
-    :src="refinedSrc"
-    :alt="alt"
-    :width="width"
-    :height="height"
-  >
+  <img :src="refinedSrc" :alt="alt" :width="width" :height="height">
 </template>
-<!-- :style="{ filter: `hue-rotate(${hueRotateDeg})`}" -->
-
 <script setup lang="ts">
 import { withBase } from 'ufo'
-import { useRuntimeConfig, computed } from '#imports'
-
-// const hueRotateDeg = inject('hueRotateDeg')
-
 const props = defineProps({
   src: {
     type: String,
@@ -32,7 +21,6 @@ const props = defineProps({
     default: undefined,
   },
 })
-
 const refinedSrc = computed(() => {
   if (props.src?.startsWith('/') && !props.src.startsWith('//')) {
     return withBase(props.src, useRuntimeConfig().app.baseURL)
