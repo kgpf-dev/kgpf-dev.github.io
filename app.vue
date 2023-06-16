@@ -3,9 +3,8 @@
     <n-global-style />
     <n-message-provider>
       <n-el class="relative min-h-screen flex flex-col items-center">
-        <n-back-top :right="100" />
         <div id="header" class="py-4 w-full flex justify-center bg-hero-topography-white/20 bg-kgpf-blue bg-blend-screen">
-          <div class="relative px-32 flex flex-col sm:flex-row gap-2 sm:gap-8 items-center justify-between">
+          <div class="relative sm:w-[900px] px-4 flex flex-col sm:flex-row gap-2 sm:gap-0 items-center justify-between">
             <n-el key="logo" class="left-0">
               <nuxt-link to="/" @click="menuSelection = null">
                 <logo-small />
@@ -27,6 +26,7 @@
             <nuxt-page />
           </div>
         </div>
+        <n-back-top :right="40" :bottom="100" />
         <div id="footer" class="relative p-4 w-full border-t bg-hero-topography-slate-500/10 font-georgia">
           <div class="grid grid-cols-3 gap-8 items-center">
             <n-text :depth="3">
@@ -149,6 +149,10 @@ const menuOptions: MenuOption[] = [
 ]
 </script>
 <style>
+html {
+  scroll-behavior: smooth;
+}
+
 .page-enter-active,
 .page-leave-active {
   transition: all 0.25s;

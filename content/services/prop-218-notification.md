@@ -5,7 +5,7 @@ title: 'KGPF - Service - Prop 218 Notification'
 Proposition 218 notification
 ============================
 
----
+:banner-img{src="/img/landscaping.jpg" alt="Landscaping" class="mb-9"}
 
 Koppel & Gruber Public Finance assists public agencies in the preparation of all necessary materials
 to comply with the requirements of Proposition 218. This includes project management expertise in

@@ -5,21 +5,23 @@ title: 'KGPF - Service - Arbitrage Compliance'
 Arbitrage compliance
 ====================
 
----
+:banner-img{src="/img/accounting2.jpg" alt="Accounting" class="mb-9"}
 
-Arbitrage is the profit made from buying something in one market and selling it in another.  In the
+Arbitrage is the profit made from buying something in one market and selling it in another. In the
 case of municipal bonds, it is the profit made using tax-exempt bond proceeds and investing them in
-taxable investments.  In other words, any interest earned or gains on taxable investments in excess
-of the arbitrage bond yield is considered arbitrage.  Generally, arbitrage is prohibited by the IRS
-Codes; however, there are a few exceptions and allowances in certain limited circumstances.  Any
-arbitrage generated cannot be kept and must be paid to the US Treasury in the form of Arbitrage
-Rebate and Yield Reduction Payments. These payments are due every five years and on the final
-redemption date or maturity of the bond issue. K&G Public Finance evaluates bond funds subject to
-the arbitrage regulations and prepares arbitrage compliance reports to determine any payment
-liability for our clients.
+taxable investments. In other words, any interest earned or gains on taxable investments in excess
+of the arbitrage bond yield is considered arbitrage.
 
-Non-compliance of arbitrage rebate can have stiff penalties, and it may affect the tax-exempt status
-of the bonds. Furthermore, the IRS reserves the right to audit any tax-exempt bond for arbitrage
-compliance up to 3 years after the bonds have matured.  In the event of a refunding, the IRS can
-audit both the refunding and refunded bonds up to 3 years after the final maturity of the refunding
-bond.
+Generally, arbitrage is prohibited by the IRS Codes; however, there are a few exceptions and
+allowances in certain limited circumstances. Any arbitrage generated cannot be kept and must be paid
+to the US Treasury in the form of Arbitrage Rebate and Yield Reduction Payments. These payments are
+due every five years and on the final redemption date or maturity of the bond issue.
+
+Non-compliance of arbitrage rebate can have *stiff* penalties, and it may affect the tax-exempt
+status of the bonds. Furthermore, the IRS reserves the right to audit any tax-exempt bond for
+arbitrage compliance up to 3 years after the bonds have matured. In the event of a refunding, the
+IRS can audit both the refunding and refunded bonds up to 3 years after the final maturity of the
+refunding bond.
+
+K&G Public Finance evaluates bond funds subject to the arbitrage regulations and prepares arbitrage
+compliance reports to determine any payment liability for our clients.

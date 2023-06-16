@@ -2,8 +2,8 @@
 title: 'KGPF - Leadership'
 ---
 
-Our key staff members
-=====================
+Key staff members
+=================
 
 ---
 
@@ -11,9 +11,9 @@ Our key staff members
   <img src="/img/lyn.jpg" alt="Lyn Gruber" class="border rounded h-[6cm] opacity-85">
 </div>
 
-<div class="flex gap-2 items-baseline">
-  <h2 class="!m-0">Lyn Gruber</h2>
-  <p-text class="text-lg" depth="3">Principal</p-text>
+<div class="flex gap-4 items-baseline">
+  <h2 class="!m-0 text-kgpf-blue">Lyn Gruber</h2>
+  <p-el class="text-kgpf-yellow text-lg">Principal<p-el>
 </div>
 
 A seasoned professional who has been in the public finance arena since 1994, Ms. Gruber focuses her
@@ -31,9 +31,9 @@ Ms. Gruber holds a Bachelor of Arts from California State University at San Bern
   <img src="/img/scott.jpg" alt="Scott Koppel" class="border rounded h-[6cm] opacity-85">
 </div>
 
-<div class="flex gap-2 items-baseline">
-  <h2 class="!m-0">Scott Koppel</h2>
-  <p-text class="text-lg" depth="3">Principal</p-text>
+<div class="flex gap-4 items-baseline">
+  <h2 class="!m-0 text-kgpf-blue">Scott Koppel</h2>
+  <p-el class="text-kgpf-yellow text-lg">Principal<p-el>
 </div>
 
 Scott has worked in the public finance arena since 1992, as a consultant with public agencies
@@ -53,8 +53,8 @@ Business Administration from the University of Washington.
 </div>
 
 <div class="flex gap-2 items-baseline">
-  <h2 class="!m-0">Doug Floyd</h2>
-  <p-text class="text-lg" depth="3">Senior Associate</p-text>
+  <h2 class="!m-0 text-kgpf-blue">Doug Floyd</h2>
+  <p-el class="text-kgpf-yellow text-lg">Senior Associate<p-el>
 </div>
 
 Douglas began his public finance career in 2003 and joined the firm in 2005. Mr. Floyd specializes

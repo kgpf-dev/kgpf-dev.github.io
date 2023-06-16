@@ -21,6 +21,11 @@ detail).
 How we use GIS
 --------------
 
+<!-- ![Custom maps](/img/map.jpg){class="w-1/3 float-right"} -->
+<div class="float-right w-3/8 ml-8 mb-4 rounded shadow">
+  <img src="/img/map.jpg" alt="Custom maps" class="opacity-85">
+</div>
+
 ### Custom maps
 
 K&G Public Finance has also worked with clients to produce custom maps. Recent examples include:

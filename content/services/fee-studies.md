@@ -5,7 +5,7 @@ title: 'KGPF - Service - Developer Fee Studies'
 Developer fee studies
 =====================
 
----
+:banner-img{src="/img/schoolbus.jpg" alt="School bus" class="mb-9" style="background-position-y: 60%"}
 
 In the context of skyrocketing construction costs and a considerable backlog in state funding from
 the School Facilities Program, school districts have increasingly needed to rely on locally funded
@@ -40,8 +40,9 @@ residential and commercial/industrial development.
 
 In order to levy statutory fees (Level I Fees), a school district must prepare and adopt a *Fee
 Justification Study* (FJS) pursuant to and in accordance with California State law.
-
 ::
+
+:banner-img{src="/img/classroom.jpg" alt="Classroom" class="my-3"}
 
 ::description-card{hoverable}
 #header
@@ -58,6 +59,8 @@ fees, and in the preparation of *School Facilities Needs Analysis* (SFNA). This 
 legal basis for justifying the collection of alternative school fees.
 
 ::
+
+:banner-img{src="/img/playground.jpg" alt="Playground" class="my-3"}
 
 ::description-card{hoverable}
 #header

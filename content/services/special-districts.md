@@ -5,6 +5,8 @@ title: 'KGPF - Service - Special Districts'
 Special district administration
 ===============================
 
+:banner-img{src="/img/houses.jpg" alt="Houses" class="mb-9" style="background-position-y: 40%"}
+
 K&G Public Finance specializes in the ongoing administration of Special Districts including
 Community Facilities Districts, Landscaping and Lighting Districts, and 1913 Act Assessment
 Districts as well as Benefit Fee Assessments and other fixed charge special assessments.
@@ -21,10 +23,10 @@ comprehensive adminstration package.
 Special district formation
 ==========================
 
-K&G Public Finance facilitates the formation of special districts.
-
 Community facilities districts
 ------------------------------
+
+:banner-img{src="/img/wall.jpg" alt="Wall" class="mb-9" style="background-position-y: 60%"}
 
 Special Tax consulting and project management services for the formation of Community Facilities
 Districts.
@@ -40,6 +42,8 @@ requirements we provide:
 
 [About community facilities districts.](/glossary#community-facilities-districts)
 
+---
+
 Assessment districts
 --------------------
 
@@ -52,8 +56,12 @@ Assessment engineering services for the formation of Assessment Districts.
 
 [About assessment districts.](/glossary#assessment-districts)
 
+---
+
 Landscaping and lighting districts
 ----------------------------------
+
+:banner-img{src="/img/park.jpg" alt="Park" class="mb-9" style="background-position-y: 60%"}
 
 Services for the formation of Landscaping and Lighting Districts.
 

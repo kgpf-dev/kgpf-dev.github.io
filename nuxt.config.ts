@@ -50,8 +50,8 @@ const THEME_OVERRIDES: ThemeOverrides = {
   },
 }
 
-export default defineNuxtConfig({
-  // ssr: false,
+const config = defineNuxtConfig({
+  // ssr: true,
   nitro: {
     prerender: {
       crawlLinks: true,
@@ -74,3 +74,6 @@ export default defineNuxtConfig({
     themeOverrides: THEME_OVERRIDES,
   },
 })
+
+// console.log(config)
+export default config

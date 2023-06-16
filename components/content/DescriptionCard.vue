@@ -5,7 +5,7 @@
     :embedded="embedded"
   >
     <template #header>
-      <div>
+      <div class="text-xl">
         <content-slot :use="$slots.header" unwrap="p" />
       </div>
       <div v-if="$slots.extra" class="text-sm">

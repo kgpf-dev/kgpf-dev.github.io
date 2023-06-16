@@ -5,17 +5,20 @@ title: 'KGPF - Service - Ongoing Reporting'
 Ongoing reporting
 =================
 
----
+:banner-img{src="/img/accounting.jpg" alt="Accounting" class="mb-9"}
 
 CDIAC debt issuance reporting
 -----------------------------
 
-California government code prescribes that certain information be reported to the *California Debt
-and Investment Advisory Commission* (CDIAC) annually regarding public debt issued by state and local
+California government code prescribes that certain information be reported to the California Debt
+and Investment Advisory Commission (CDIAC) annually regarding public debt issued by state and local
 government agencies, and mandates additional reporting requirements specific to debt issuances for
-Mello-Roos Community Facilities Districts. Furthermore, throughout the year, agencies must report
-any draws upon the reserve fund to service debt and/or interest payments, and defaults on debt
-service payments. K&G Public Finance can offer years of experience in post-issuance compliance, and
+Mello-Roos Community Facilities Districts.
+
+Furthermore, agencies throughout the year must report any draws upon the reserve fund in order to
+service debt and/or interest payments, and especially any defaults on payments.
+
+K&G Public Finance can offer years of experience in post-issuance compliance, and
 has presented at annual workshops hosted by CDIAC.
 
 ::description-card{hoverable}
@@ -30,6 +33,7 @@ Pursuant to the amended Mello-Roos Community Facilities Act of 1982, agencies th
 Community Facilities District bonds after January 1, 1993 must file a report with CDIAC by October
 30th of every year until the bond issuance is retired.
 ::
+
 
 ::description-card{hoverable}
 #header
@@ -58,18 +62,24 @@ funds to a local obligor, must file a report with CDIAC by October 30th of every
 bond issuance is retired.
 ::
 
+---
+
 Continuing disclosure
 ---------------------
 
 Most issuers of municipal bonds must disclose and provide information which will enable
-investors to make informed decisions regarding their investments. As a continuing disclosure agent,
-K&G Public Finance, will provide the necessary services to satisfy the requirements of disclosure
-obligations and as stipulated in the Continuing Disclosure Agreement and other related bond
-documents.
+investors to make informed decisions regarding their investments.
 
-Rule 15c2-12 was adopted by the Securities Exchange Commission (SEC) to increase reliability of
-disseminated information, several amendments were made which now include continuing disclosure
-(disclosure and operating information filed annually) and disclosure of material events.
+Since the adoption of Rule 15c2-12 by the Securities Exchange Commission (SEC) to increase
+reliability of disseminated information, several amendments have been made which now include
+continuing disclosure (disclosure and operating information filed annually) and the disclosure of
+material events.
+
+As a continuing disclosure agent, K&G Public Finance, will provide the necessary services to satisfy
+the requirements of disclosure obligations and as stipulated in the Continuing Disclosure Agreement
+and other related bond documents.
+
+---
 
 Special tax and bond accountability reporting
 ---------------------------------------------
