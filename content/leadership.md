@@ -7,8 +7,10 @@ Key staff members
 
 ---
 
-<div class="float-left mr-8 mb-4 rounded shadow">
-  <img src="/img/lyn.jpg" alt="Lyn Gruber" class="border rounded h-[6cm] opacity-85">
+<div class="mb-4 flex justify-center md:float-left">
+  <div class="rounded shadow md:mr-8">
+    <img src="/img/lyn.jpg" alt="Lyn Gruber" class="border rounded h-[6cm] opacity-85">
+  </div>
 </div>
 
 <div class="flex gap-4 items-baseline">
@@ -27,8 +29,10 @@ Ms. Gruber holds a Bachelor of Arts from California State University at San Bern
 
 ---
 
-<div class="float-right ml-8 mb-4 rounded shadow">
-  <img src="/img/scott.jpg" alt="Scott Koppel" class="border rounded h-[6cm] opacity-85">
+<div class="mb-4 flex justify-center md:float-left">
+  <div class="rounded shadow md:mr-8">
+    <img src="/img/scott.jpg" alt="Scott Koppel" class="border rounded h-[6cm] opacity-85">
+  </div>
 </div>
 
 <div class="flex gap-4 items-baseline">
@@ -48,8 +52,10 @@ Business Administration from the University of Washington.
 
 ---
 
-<div class="float-left mr-8 mb-4 rounded shadow">
-  <img src="/img/doug.jpg" alt="Doug Floyd" class="border rounded h-[6cm] opacity-80">
+<div class="mb-4 flex justify-center md:float-left">
+  <div class="rounded shadow md:mr-8">
+    <img src="/img/doug.jpg" alt="Doug Floyd" class="border rounded h-[6cm] opacity-80">
+  </div>
 </div>
 
 <div class="flex gap-2 items-baseline">

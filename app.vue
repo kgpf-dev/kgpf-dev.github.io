@@ -62,89 +62,64 @@ import { NuxtLink } from '#components'
 const menuSelection = ref<string | null>(null)
 
 const iconRenderer = (icon: Component) => () => h(NIcon, null, { default: () => h(icon) })
-const linkRenderer = (to: string, text: string) => () => h(NuxtLink, { to }, { default: () => text })
+const labelRenderer = ({ text, to, cls }: { text: string; to?: string; cls?: string }) => () => {
+  const label = () => h('span', { class: cls }, { default: () => text })
+  return to ? h(NuxtLink, { to }, { default: label }) : label()
+}
+
+const HIDE = 'hidden md:inline'
 
 const menuOptions: MenuOption[] = [
   {
     key: 'services',
     icon: iconRenderer(ServicesIcon),
-    label: 'Services',
+    label: labelRenderer({ text: 'Services', cls: HIDE }),
     children: [
       {
         key: 'special-districts',
-        label: linkRenderer(
-          '/services/special-districts',
-          'Special districts',
-        ),
+        label: labelRenderer({ text: 'Special districts', to: '/services/special-districts' }),
       },
       {
         key: 'fee-studies',
-        label: linkRenderer(
-          '/services/fee-studies',
-          'Developer fee studies',
-        ),
+        label: labelRenderer({ text: 'Developer fee studies', to: '/services/fee-studies' }),
       },
       {
         key: 'ongoing-reporting',
-        label: linkRenderer(
-          '/services/ongoing-reporting',
-          'Ongoing reporting',
-        ),
+        label: labelRenderer({ text: 'Ongoing reporting', to: '/services/ongoing-reporting' }),
       },
       {
         key: 'gis',
-        label: linkRenderer(
-          '/services/gis',
-          'GIS services',
-        ),
+        label: labelRenderer({ text: 'GIS services', to: '/services/gis' }),
       },
       {
         key: 'arbitrage-compliance',
-        label: linkRenderer(
-          '/services/arbitrage-compliance',
-          'Arbitrage compliance',
-        ),
+        label: labelRenderer({ text: 'Arbitrage compliance', to: '/services/arbitrage-compliance' }),
       },
       {
         key: 'prop-218-notification',
-        label: linkRenderer(
-          '/services/prop-218-notification',
-          'Proposition 218 notification',
-        ),
+        label: labelRenderer({ text: 'Proposition 218 notification', to: '/services/prop-218-notification' }),
       },
     ],
   },
   {
     key: 'faq',
     icon: iconRenderer(OwnersIcon),
-    label: linkRenderer(
-      '/owners/faq',
-      'FAQ',
-    ),
+    label: labelRenderer({ text: 'FAQ', to: '/owners/faq', cls: HIDE }),
   },
   {
     key: 'glossary',
     icon: iconRenderer(GlossaryIcon),
-    label: linkRenderer(
-      '/glossary',
-      'Glossary',
-    ),
+    label: labelRenderer({ text: 'Glossary', to: '/glossary', cls: HIDE }),
   },
   {
     key: 'leadership',
     icon: iconRenderer(LeadershipIcon),
-    label: linkRenderer(
-      '/leadership',
-      'Leadership',
-    ),
+    label: labelRenderer({ text: 'Leadership', to: '/leadership', cls: HIDE }),
   },
   {
     key: 'contact',
     icon: iconRenderer(ContactIcon),
-    label: linkRenderer(
-      '/contact',
-      'Contact us',
-    ),
+    label: labelRenderer({ text: 'Contact us', to: '/contact', cls: HIDE }),
   },
 ]
 </script>
