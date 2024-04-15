@@ -15,7 +15,12 @@ const OFFICE = {
 const makeTel = (label: string) => `tel:${label.replaceAll(/[()-\s]/g, '')}`
 
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: {
+    enabled: (
+      true
+      // false
+    ),
+  },
   runtimeConfig: {
     public: {
       // TODO: https://nuxt.com/docs/guide/going-further/runtime-config#environment-variables
@@ -49,20 +54,27 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
   ],
   content: {
-    documentDriven: true,
+    documentDriven: (
+      true
+      // false
+    ),
   },
   ssr: true,
   site: {
     url: 'http://192.168.1.92:3000', // WARNING:
   },
-  // nitro: {
-  //   prerender: {
-  //     crawlLinks: true,
-  //     failOnError: true,
-  //     routes: [
-  //       '/',
-  //       '/sitemap.xml',
-  //     ],
-  //   },
-  // },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      // concurrency: 1,
+      failOnError: (
+        true
+        // false
+      ),
+      routes: [
+        '/',
+        '/sitemap.xml',
+      ],
+    },
+  },
 })

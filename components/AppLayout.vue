@@ -1,20 +1,12 @@
 <template>
   <div class="relative min-h-screen flex flex-col items-center">
-    <AppHeader :use-dropdowns="useDropdowns" class="mb-8" />
+    <AppHeader class="mb-8" />
     <div class="flex-1 m-auto">
       <slot />
     </div>
     <AppFooter class="lg:mt-16 mt-8" />
   </div>
 </template>
-
-<script lang="ts" setup>
-import { useGrid } from 'vue-screen'
-
-const grid = useGrid('tailwind')
-
-const useDropdowns = computed(() => grid.lg)
-</script>
 
 <style lang="postcss">
 html {

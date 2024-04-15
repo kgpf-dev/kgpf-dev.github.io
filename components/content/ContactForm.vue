@@ -90,8 +90,6 @@ type Schema = z.output<typeof schema>
 const validate = (state: any): FormError[] => {
   const res = schema.safeParse(state)
   if (!res.success) {
-    // eslint-disable-next-line no-console
-    console.error(res.error)
     for (const e of res.error.issues) {
       if (e.code === 'custom') {
         return [
@@ -125,7 +123,7 @@ const DEBUG_SEND_RESULT = (
   // 'failure'
 ) satisfies DebugSendResult as DebugSendResult
 
-const DEBUG_SUBMIT_REENABLE = (
+const DEBUG_SUBMIT_REENABLE = DEBUG && (
   true
   // false
 ) satisfies boolean as boolean
@@ -134,7 +132,7 @@ const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 </script>
 
 <script lang="ts" setup>
-const { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } = useRuntimeConfig().public
+const { emailjs } = useRuntimeConfig().public
 const toast = useToast()
 
 const sendMessage = async (state: Schema): Promise<boolean> => {
@@ -148,10 +146,10 @@ const sendMessage = async (state: Schema): Promise<boolean> => {
     })
   } else {
     return await sendEmail(
-      SERVICE_ID,
-      TEMPLATE_ID,
+      emailjs.serviceId,
+      emailjs.templateId,
       state,
-      { publicKey: PUBLIC_KEY },
+      { publicKey: emailjs.publicKey },
     ).then(
       () => true,
       () => false,

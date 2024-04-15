@@ -10,15 +10,23 @@
         </NavItem>
       </ULink>
       <div class="lg:flex lg:gap-y-8 grid grid-cols-2 gap-y-2 gap-8 tracking-wider">
-        <UDropdown
-          v-show="useDropdowns"
-          :items="SERVICE_ITEMS"
-          :ui="{
-            width: 'w-auto',
-            item: { base: 'hover:text-gray-900' },
-          }"
-          mode="hover"
-        >
+        <div class="lg:block hidden">
+          <UDropdown
+            :items="SERVICE_ITEMS"
+            :ui="{ width: 'w-auto', item: { base: 'hover:text-gray-900' } }"
+            mode="hover"
+          >
+            <ULink to="/services">
+              <NavItem class="gap-1">
+                <template #shifts>
+                  <UIcon name="i-heroicons-building-library-solid" />
+                </template>
+                <span>Services</span>
+              </NavItem>
+            </ULink>
+          </UDropdown>
+        </div>
+        <div class="lg:hidden block">
           <ULink to="/services">
             <NavItem class="gap-1">
               <template #shifts>
@@ -27,15 +35,7 @@
               <span>Services</span>
             </NavItem>
           </ULink>
-        </UDropdown>
-        <ULink v-show="!useDropdowns" to="/services">
-          <NavItem class="gap-1">
-            <template #shifts>
-              <UIcon name="i-heroicons-building-library-solid" />
-            </template>
-            <span>Services</span>
-          </NavItem>
-        </ULink>
+        </div>
         <ULink to="/owners/faq">
           <NavItem class="gap-1">
             <template #shifts>
@@ -73,8 +73,7 @@
   </div>
 </template>
 
-<script lang="ts">
-// TODO: Any way to reduce duplication between service items and /services/index?
+<script lang="ts" setup>
 const SERVICE_ITEMS = [
   [
     {
@@ -119,8 +118,4 @@ const SERVICE_ITEMS = [
     },
   ],
 ]
-</script>
-
-<script lang="ts" setup>
-defineProps<{ useDropdowns: boolean }>()
 </script>

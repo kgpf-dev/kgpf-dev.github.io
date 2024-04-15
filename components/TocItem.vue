@@ -1,6 +1,6 @@
 <template>
   <li>
-    <ULink :to="link.id">
+    <ULink :to="`#${link.id}`">
       {{ link.text }}
     </ULink>
     <ul v-if="link.children?.length">
