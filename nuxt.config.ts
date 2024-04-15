@@ -51,7 +51,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/ui',
-    '@nuxtjs/sitemap',
+    // '@nuxtjs/sitemap',
   ],
   content: {
     documentDriven: (
@@ -60,20 +60,17 @@ export default defineNuxtConfig({
     ),
   },
   ssr: true,
-  site: {
-    url: 'http://192.168.1.92:3000', // WARNING:
-  },
+  // site: {
+  //   url: 'http://192.168.1.92:3000', // WARNING:
+  // },
   nitro: {
+    serveStatic: true,
     prerender: {
       crawlLinks: true,
-      // concurrency: 1,
-      failOnError: (
-        true
-        // false
-      ),
+      failOnError: true,
       routes: [
         '/',
-        '/sitemap.xml',
+        // '/sitemap.xml',
       ],
     },
   },
