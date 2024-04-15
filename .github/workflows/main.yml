@@ -19,9 +19,7 @@ jobs:
         with:
           node-version: "18"
       - run: pnpm install
-      - run: pnpm run generate
-        env:
-          NITRO_PRESET: github-pages
+      - run: npx nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
