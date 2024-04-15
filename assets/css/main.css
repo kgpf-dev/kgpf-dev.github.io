@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer utilities { */
+.small-caps {
+  font-variant: small-caps;
+}
+
+.all-small-caps {
+  font-variant: small-caps;
+}
+/* } */
+
+a {
+  @apply text-kgpf-yellow-600;
+}
+
+a:hover {
+  @apply text-kgpf-yellow-800;
+}
