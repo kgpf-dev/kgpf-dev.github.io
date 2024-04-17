@@ -2,7 +2,7 @@
   <UContainer>
     <main class="mt-6 lg:mb-12 mb-6 prose prose-sm sm:prose-base">
       <template v-if="showTitle || prevInfo || nextInfo || showToc">
-        <h1 v-if="showTitle" class="not-prose mb-4 text-2xl text-kgpf-blue-800">
+        <h1 v-if="showTitle" class="not-prose mt-6 mb-4 text-2xl text-kgpf-blue-800">
           {{ page.title }}
         </h1>
         <PrevNext v-if="prevInfo || nextInfo" :prev="prevInfo" :next="nextInfo" class="not-prose text-lg" />
@@ -21,7 +21,7 @@
           class="w-full h-[2in] object-cover rounded shadow"
           :class="page.banner.class"
         >
-        <hr v-else>
+        <hr v-else class="not-prose mt-6 mb-12">
       </template>
       <slot />
     </main>
