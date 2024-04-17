@@ -13,10 +13,10 @@
     "@nuxt/ui": "^2.15.1",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/sitemap": "^5.1.4",
+    "@tailwindcss/typography": "^0.5.12",
     "@typescript-eslint/parser": "^5.62.0",
     "nuxt": "^3.11.2",
     "ts-pattern": "^5.1.1",
-    "vue-screen": "^2.4.0",
     "zod": "^3.22.4"
   }
 }

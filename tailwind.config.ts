@@ -1,4 +1,8 @@
 import type { Config } from 'tailwindcss'
+import typography from '@tailwindcss/typography'
+
+// Colors generated using:
+// https://uicolors.app/create
 
 const KGPF_BLUE = {
   50: '#f3f6fb',
@@ -44,18 +48,31 @@ const KGPF_SLATE = {
 
 export default <Partial<Config>> {
   content: [
-    './components/**/*.vue',
+    './{components,pages}/**/*.vue',
     './content/**/*.md',
+  ],
+  plugins: [
+    typography(),
   ],
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            a: null,
+            h1: { a: { color: 'unset' }, fontWeight: null },
+            h2: { a: { color: 'unset' }, fontWeight: null },
+            h3: { a: { color: 'unset' }, fontWeight: null },
+            h4: { a: { color: 'unset' }, fontWeight: null },
+            h5: { a: { color: 'unset' }, fontWeight: null },
+            h6: { a: { color: 'unset' }, fontWeight: null },
+          },
+        },
+      },
       colors: {
         'kgpf-blue': KGPF_BLUE,
         'kgpf-yellow': KGPF_YELLOW,
         'kgpf-slate': KGPF_SLATE,
-      },
-      width: {
-        prose: '65ch',
       },
     },
   },

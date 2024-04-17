@@ -1,18 +1,29 @@
-const EMAILJS = {
-  serviceId: 'service_cyfvchj',
-  templateId: 'template_l4rw42j',
-  publicKey: 'RGG5-wqs3eeIeXasy',
+const makeTel = (label: string) => {
+  const href = `tel:${label.replaceAll(/[()-\s]/g, '')}`
+  return { label, href }
 }
 
-const PHONE = '(760) 510-0290'
-const FAX = '(760) 510-0288'
-const OFFICE = {
-  address: '334 Via Vera Cruz, Suite 256',
-  cityStateZip: 'San Marcos, California 92078',
-  mapsUrl: 'https://maps.app.goo.gl/m7KF3K1gjFVoH4c2A',
+const RUNTIME_CONFIG = {
+  public: {
+    seo: {
+      title: 'K&G Public Finance',
+    },
+    emailjs: {
+      serviceId: 'service_cyfvchj',
+      templateId: 'template_l4rw42j',
+      publicKey: 'RGG5-wqs3eeIeXasy',
+    },
+    kgpf: {
+      phone: makeTel('(760) 510-0290'),
+      fax: makeTel('(760) 510-0288'),
+      office: {
+        address: '334 Via Vera Cruz, Suite 256',
+        cityStateZip: 'San Marcos, California 92078',
+        mapsUrl: 'https://maps.app.goo.gl/m7KF3K1gjFVoH4c2A',
+      },
+    },
+  },
 }
-
-const makeTel = (label: string) => `tel:${label.replaceAll(/[()-\s]/g, '')}`
 
 export default defineNuxtConfig({
   devtools: {
@@ -21,23 +32,7 @@ export default defineNuxtConfig({
       // false
     ),
   },
-  runtimeConfig: {
-    public: {
-      // TODO: https://nuxt.com/docs/guide/going-further/runtime-config#environment-variables
-      emailjs: EMAILJS,
-      kgpf: {
-        phone: {
-          label: PHONE,
-          href: makeTel(PHONE),
-        },
-        fax: {
-          label: FAX,
-          href: makeTel(FAX),
-        },
-        office: OFFICE,
-      },
-    },
-  },
+  runtimeConfig: RUNTIME_CONFIG,
   app: {
     pageTransition: {
       name: 'page',
@@ -45,33 +40,23 @@ export default defineNuxtConfig({
     },
   },
   css: ['@/assets/css/main.css'],
-  colorMode: {
-    preference: 'light',
-  },
+  colorMode: { preference: 'light' },
   modules: [
     '@nuxt/content',
     '@nuxt/ui',
     // '@nuxtjs/sitemap',
   ],
-  content: {
-    documentDriven: (
-      true
-      // false
-    ),
-  },
   ssr: true,
-  // site: {
-  //   url: 'http://192.168.1.92:3000', // WARNING:
+  content: { documentDriven: true },
+  // site: { url: 'http://192.168.1.92:3000' }, // WARNING:
+  // nitro: {
+  //   prerender: {
+  //     crawlLinks: true,
+  //     failOnError: true,
+  //     routes: [
+  //       '/',
+  //       // '/sitemap.xml',
+  //     ],
+  //   },
   // },
-  nitro: {
-    serveStatic: true,
-    prerender: {
-      crawlLinks: true,
-      failOnError: true,
-      routes: [
-        '/',
-        // '/sitemap.xml',
-      ],
-    },
-  },
 })

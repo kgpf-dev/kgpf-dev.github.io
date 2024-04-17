@@ -3,11 +3,11 @@ title: Frequently Asked Questions
 toc: true
 ---
 
-What is KGPF's role?
+What is K&G Public Finance's role?
 ----------------------------------
 
 We specialize in financial consulting to public agencies, and one of the services we provide is the
-[annual administration of Special Districts][admin]. Such districts include [Community Facilities
+[annual administration of Special Districts][services-district-admin]. Such districts include [Community Facilities
 Districts][cfd] (commonly referred to as Mello-Roos districts), [Landscaping and Lighting
 Districts][lld], and 1913 Act [Assessment Districts][ad], as well as Benefit Fee Assessments and
 other fixed charge special assessments.
@@ -16,32 +16,33 @@ Annual Administration refers to the process of calculating the [special
 taxes/charges][sc] or fees for these various Special Districts and placing
 these on the County Tax Roll to be included on the Annual Tax Bill.
 
-If you see our toll-free phone number {{ $doc.phoneLabel }} next to a line item on your property tax
-bill we are the administrators for that particular special tax or assessment.
+If you see our toll-free phone number :my-link{:to="phoneHref" :label="phoneLabel"} next to a line item
+on your property tax bill we are the administrators for that particular special tax or assessment.
 
-[admin]: /services/special-districts#administration
+To get in contact with us you can call our toll-free phone number
+or [send us a message through this website](/contact).
 
+[services-district-admin]: /services/special-districts#administration
 [cfd]: #community-facilities-district
 [lld]: #landscaping-and-lighting-district
 [ad]: #assessment-district
-
 [sc]: #special-charge
 
 ---
 
-Special charge?
+Special Charge?
 ---------------
 
 [What is fixed charge special assessment?]{.question}
 
 Property tax law allows for the collection of special assessments levied by local government
 entities through the property tax bills. Examples of these assessments include special taxes such as
-Mello-Roos, and fees or charges assessed by a variety of special districts to pay for specific
+Mello-Roos or charges assessed by a variety of special districts to pay for specific
 additional services or benefits to properties located within the districts’ boundaries.
 
-[More on special charges.](/glossary#special-charge)
+[More on Special Charges.](/glossary#special-charge)
 
-When do I pay these charges?]{.question}
+[When do I pay these charges?]{.question}
 
 Special charges are typically included in your general property tax bill and are subject to the same
 penalties that apply to your regular property taxes.
@@ -63,13 +64,13 @@ By law, special charges are not based on property value.
 
 ---
 
-Assessment district?
+Assessment District?
 --------------------
 
 Assessment districts (AD) are used by public agencies as a financing method for various public
 improvements.
 
-[More on assessment districts.](/glossary#assessment-districts)
+[More on Assessment Districts.](/glossary#assessment-districts)
 
 [What does it pay for?]{.question}
 
@@ -78,7 +79,7 @@ gas and lighting infrastructure, public transit facilities, and other basic infr
 
 ---
 
-Benefit assessment district?
+Benefit Assessment District?
 ----------------------------
 
 Benefit Assessment Act of 1982 is a financing tool used by local governments to pay for various
@@ -91,7 +92,7 @@ Authorized services include drainage, flood control, street lighting, and street
 
 ---
 
-Community facilities district?
+Community Facilities District?
 ------------------------------
 
 A *community facilities district* (CFD), most commonly known as the Mello-Roos, comes from
@@ -100,14 +101,14 @@ Facilities Act of 1982</q> (<q>the Act</q>). A community facilities district pro
 cities, school districts, joint powers authority and other special districts and/or local agencies a
 way to finance certain public improvements and services.
 
-[More on community facilities districts.](/glossary#community-facilities-districts)
+[More on Community Facilities Districts.](/glossary#community-facilities-districts)
 
 [What does it pay for?]{.question}
 
 Authorized improvements and services include but not limited to:
 
-::div{class="grid grid-cols-2 gap-4"}
-:::div
+::div{.sm:grid .sm:grid-cols-2 .sm:gap-4 contents}
+:::div{.sm:mt-0 .mt-4}
 *Services:* 
 
 - Fire Protection
@@ -118,7 +119,7 @@ Authorized improvements and services include but not limited to:
 - Flood and storm protection services
 - Snow plowing and sand storm protection systems
 :::
-:::div
+:::div{.sm:mt-0 .mt-4}
 *Facilities:* 
 
 - Streets, sewer systems
@@ -134,14 +135,14 @@ Authorized improvements and services include but not limited to:
 
 ---
 
-Landscaping and lighting district?
+Landscaping and Lighting District?
 ----------------------------------
 
 The Landscaping and Lighting District Act of 1972 is a financing tool used by various local
 governments to pays for the maintenance of landscaping, lighting and other improvements in public
 areas. Only the properties that benefit directly from these improvements are assessed.
 
-[More on landscaping and lighting districts.](/glossary#landscaping-and-lighting-districts)
+[More on Landscaping and Lighting Districts.](/glossary#landscaping-and-lighting-districts)
 
 [What does it pay for?]{.question}
 

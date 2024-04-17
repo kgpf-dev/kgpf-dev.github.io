@@ -1,74 +1,71 @@
 <template>
-  <div id="header" class="w-full lg:py-3 py-4 flex border-b bg-kgpf-blue-900 font-serif bg-[url('~/assets/svg/header.svg')] bg-clip-padding">
-    <div id="navbar" class="mx-auto flex lg:flex-row items-center gap-2 flex-col">
-      <ULink to="/" class="lg:mr-10">
-        <NavItem class="text-3xl">
+  <div id="header" class="w-full flex justify-center bg-kgpf-blue-900 bg-[url('~/assets/svg/header.svg')] bg-clip-padding">
+    <div id="navbar" class="m-4 lg:flex grid grid-cols-2 items-center gap-x-6 gap-y-2 tracking-wider">
+      <ULink to="/" class="lg:mr-6">
+        <NavItem class="lg:text-3xl">
           <template #shifts>
-            <span class="text-kgpf-yellow-500">KG</span>
+            <span class="lg:block hidden text-kgpf-yellow-500">KG</span>
+            <UIcon name="lg:hidden i-heroicons-home-16-solid" />
           </template>
-          <span class="text-white">PF</span>
+          <span class="lg:block hidden text-white">PF</span>
+          <span class="lg:hidden">Home</span>
         </NavItem>
       </ULink>
-      <div class="lg:flex lg:gap-y-8 grid grid-cols-2 gap-y-2 gap-8 tracking-wider">
-        <div class="lg:block hidden">
-          <UDropdown
-            :items="SERVICE_ITEMS"
-            :ui="{ width: 'w-auto', item: { base: 'hover:text-gray-900' } }"
-            mode="hover"
-          >
-            <ULink to="/services">
-              <NavItem class="gap-1">
-                <template #shifts>
-                  <UIcon name="i-heroicons-building-library-solid" />
-                </template>
-                <span>Services</span>
-              </NavItem>
-            </ULink>
-          </UDropdown>
-        </div>
-        <div class="lg:hidden block">
-          <ULink to="/services">
-            <NavItem class="gap-1">
-              <template #shifts>
-                <UIcon name="i-heroicons-building-library-solid" />
-              </template>
-              <span>Services</span>
-            </NavItem>
-          </ULink>
-        </div>
-        <ULink to="/owners/faq">
+      <UDropdown
+        :items="SERVICE_ITEMS"
+        :ui="{ width: 'w-auto', item: { base: 'hover:text-gray-900' } }"
+        mode="hover"
+        class="lg:block hidden"
+      >
+        <ULink to="/services">
           <NavItem class="gap-1">
             <template #shifts>
-              <UIcon name="i-heroicons-home-solid" />
+              <UIcon name="i-heroicons-building-library-16-solid" />
             </template>
-            <span>Owner FAQ</span>
+            <span>Services</span>
           </NavItem>
         </ULink>
-        <ULink to="/glossary">
-          <NavItem class="gap-1">
-            <template #shifts>
-              <UIcon name="i-heroicons-book-open-solid" />
-            </template>
-            <span>Glossary</span>
-          </NavItem>
-        </ULink>
-        <ULink to="/leadership">
-          <NavItem class="gap-1">
-            <template #shifts>
-              <UIcon name="i-heroicons-users-solid" />
-            </template>
-            <span>Leadership</span>
-          </NavItem>
-        </ULink>
-        <ULink to="/contact">
-          <NavItem class="gap-1">
-            <template #shifts>
-              <UIcon name="i-heroicons-envelope-solid" />
-            </template>
-            <span>Contact Us</span>
-          </NavItem>
-        </ULink>
-      </div>
+      </UDropdown>
+      <ULink class="lg:hidden" to="/services">
+        <NavItem class="gap-1">
+          <template #shifts>
+            <UIcon name="i-heroicons-building-library-16-solid" />
+          </template>
+          <span>Services</span>
+        </NavItem>
+      </ULink>
+      <ULink to="/owners/faq">
+        <NavItem class="gap-1">
+          <template #shifts>
+            <UIcon name="i-heroicons-chat-bubble-left-right-16-solid" />
+          </template>
+          <span>Owner FAQ</span>
+        </NavItem>
+      </ULink>
+      <ULink to="/glossary">
+        <NavItem class="gap-1">
+          <template #shifts>
+            <UIcon name="i-heroicons-book-open-16-solid" />
+          </template>
+          <span>Glossary</span>
+        </NavItem>
+      </ULink>
+      <ULink to="/leadership">
+        <NavItem class="gap-1">
+          <template #shifts>
+            <UIcon name="i-heroicons-trophy-16-solid" />
+          </template>
+          <span>Leadership</span>
+        </NavItem>
+      </ULink>
+      <ULink to="/contact">
+        <NavItem class="gap-1">
+          <template #shifts>
+            <UIcon name="i-heroicons-envelope-16-solid" />
+          </template>
+          <span>Contact Us</span>
+        </NavItem>
+      </ULink>
     </div>
   </div>
 </template>
@@ -86,7 +83,7 @@ const SERVICE_ITEMS = [
     {
       label: 'Developer Fee Studies',
       to: '/services/fee-studies',
-      icon: 'i-heroicons-magnifying-glass',
+      icon: 'i-heroicons-wrench-screwdriver',
     },
   ],
   [
@@ -107,7 +104,7 @@ const SERVICE_ITEMS = [
     {
       label: 'Arbitrage Compliance',
       to: '/services/arbitrage-compliance',
-      icon: 'i-heroicons-banknotes',
+      icon: 'i-heroicons-scale',
     },
   ],
   [

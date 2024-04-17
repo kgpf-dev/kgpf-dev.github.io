@@ -1,5 +1,9 @@
 https://uicolors.app/create
 
+- Capitalization
+- K&G Public Finance
+- https://leginfo.legislature.ca.gov/faces/home.xhtml
+
 # Content v2 Minimal Starter
 
 Look at the [Content documentation](https://content.nuxt.com/) to learn more.

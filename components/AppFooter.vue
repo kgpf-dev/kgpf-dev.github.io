@@ -9,9 +9,6 @@
         <div>{{ office.cityStateZip }}</div>
       </a>
       <div class="flex flex-col items-center">
-        <!-- <ULink to="/"> -->
-        <!--   <img src="/img/logo.png" class="mb-2 h-[0.5in]"> -->
-        <!-- </ULink> -->
         <span>Copyright © 2023</span>
         <span>Koppel & Gruber Public Finance</span>
         <span>All Rights Reserved</span>

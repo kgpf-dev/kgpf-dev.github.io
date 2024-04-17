@@ -2,7 +2,7 @@
 title: Client services
 ---
 
-*KGPF provides a valuable variety of services to California's public agencies.*
+*K&G Public Finance provides a variety of valuable services to California's public agencies.*
 
 ::div{class="md:grid grid-cols-2 flex flex-col gap-4 items-start"}
 
@@ -30,7 +30,7 @@ towards their unique facility needs.
 - Combined annual and five-year developer fee reports
 
 #header
-:IconLink{label="Developer Fee Studies" to="/services/fee-studies" icon="i-heroicons-magnifying-glass"}
+:IconLink{label="Developer Fee Studies" to="/services/fee-studies" icon="i-heroicons-wrench-screwdriver"}
 :::
 
 <!-- Arbitrage Compliance -->
@@ -64,7 +64,7 @@ needs.
 - Payment liability reports for clients
 
 #header
-:IconLink{label="Arbitrage Compliance" to="/services/arbitrage-compliance" icon="i-heroicons-banknotes"}
+:IconLink{label="Arbitrage Compliance" to="/services/arbitrage-compliance" icon="i-heroicons-scale"}
 :::
 
 <!-- Proposition 218 Notification -->

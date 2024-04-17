@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer utilities { */
 .small-caps {
   font-variant: small-caps;
 }
@@ -10,7 +9,21 @@
 .all-small-caps {
   font-variant: small-caps;
 }
-/* } */
+
+.question {
+  @apply pl-2;
+  @apply border-l-4;
+  @apply italic;
+  @apply border-gray-400;
+  @apply text-gray-500;
+}
+
+html {
+  font-size: 14pt;
+  @apply scroll-smooth;
+  @apply text-gray-700;
+  @apply font-serif;
+}
 
 a {
   @apply text-kgpf-yellow-600;
@@ -18,4 +31,16 @@ a {
 
 a:hover {
   @apply text-kgpf-yellow-800;
+}
+
+.prose .card {
+  @apply my-5;
+}
+
+.prose div > *:first-child:not(div) {
+  @apply mt-0;
+}
+
+.prose div > *:last-child:not(div) {
+  @apply mb-0;
 }

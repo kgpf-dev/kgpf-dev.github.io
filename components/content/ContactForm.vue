@@ -13,9 +13,6 @@
         <UFormGroup label="Name" name="name" required>
           <UInput v-model="state.name" :disabled="disabled" placeholder="Benjamin Button" />
         </UFormGroup>
-        <UFormGroup label="Your message" name="message" required>
-          <UTextarea v-model="state.message" :disabled="disabled" placeholder="..." resize />
-        </UFormGroup>
         <div class="sm:grid sm:grid-cols-2 sm:gap-4 contents">
           <UFormGroup label="Email" name="email">
             <UInput v-model="state.email" :disabled="disabled" icon="i-heroicons-envelope" placeholder="you@example.com" />
@@ -24,6 +21,12 @@
             <UInput v-model="state.phone_number" :disabled="disabled" icon="i-heroicons-device-phone-mobile" placeholder="555 123 4567" />
           </UFormGroup>
         </div>
+        <UFormGroup label="Parcel number or address" required>
+          <UInput v-model="state.apn_address" placeholder="1234-56-78/1234 Main St." />
+        </UFormGroup>
+        <UFormGroup label="Your message" name="message" required>
+          <UTextarea v-model="state.message" :disabled="disabled" placeholder="..." resize />
+        </UFormGroup>
         <UFormGroup label="Preferred method of contact">
           <URadioGroup
             v-model="state.preferred_contact"
@@ -75,8 +78,9 @@ const PreferredContact = z.enum(PREFERRED_CONTACT)
  * ```
  */
 const schema = z.object({
-  name: z.string().min(1, 'Name cannot be empty.'),
-  message: z.string().min(1, 'Message cannot be empty.'),
+  apn_address: z.string().trim().min(1, 'APN/Address cannot be empty'),
+  name: z.string().trim().min(1, 'Name cannot be empty.'),
+  message: z.string().trim().min(1, 'Message cannot be empty.'),
   email: z.string().email('Invalid email').optional(),
   phone_number: z.string().optional(),
   preferred_contact: PreferredContact,
@@ -160,6 +164,7 @@ const sendMessage = async (state: Schema): Promise<boolean> => {
 const disabled = ref(false)
 
 const state = reactive<Partial<Schema>>({
+  apn_address: undefined,
   name: undefined,
   message: undefined,
   email: undefined,
