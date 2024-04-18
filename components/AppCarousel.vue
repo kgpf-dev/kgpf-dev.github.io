@@ -51,29 +51,34 @@ const props = defineProps<{
 
 const items: VNode[] = [
   h('img', {
-    src: '/img/logo.png',
+    src: '/img/logo/large.svg',
     alt: 'KGPF logo',
     class: 'py-8 object-contain',
+    draggable: false,
   }),
   h('img', {
     src: '/img/houses-large.jpg',
     alt: 'Houses',
     class: 'object-cover',
+    draggable: false,
   }),
   h('img', {
     src: '/img/school-track.jpg',
     alt: 'School (track)',
     class: 'object-cover',
+    draggable: false,
   }),
   h('img', {
     src: '/img/school-interior.jpg',
     alt: 'School (interior)',
     class: 'object-cover',
+    draggable: false,
   }),
   h('img', {
     src: '/img/school-exterior.jpg',
     alt: 'School (exterior)',
     class: 'object-cover',
+    draggable: false,
   }),
 ]
 

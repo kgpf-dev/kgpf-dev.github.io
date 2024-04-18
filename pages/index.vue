@@ -1,7 +1,7 @@
 <template>
   <main class="lg:px-0 px-4 lg:mb-12 mb-6 flex flex-col items-center lg:gap-6 gap-3">
     <AppCarousel :interval="5000" size-class="w-full h-[3.5in]" class="lg:block hidden" />
-    <img class="lg:hidden w-full mt-6 mb-3 max-w-screen-sm" src="/img/logo.png" alt="KGPF logo">
+    <img class="lg:hidden w-full mt-6 mb-3 max-w-screen-sm" src="/img/logo/large.svg" alt="KGPF logo">
     <!-- Koppel & Gruber Public Finance has specialized in financial consulting to public agencies in California since 2004. -->
     <div class="max-w-screen-lg flex flex-col items-center gap-3">
       <UDivider class="lg:hidden" />

@@ -2,15 +2,24 @@
   <div id="header" class="w-full flex justify-center bg-kgpf-blue-900 bg-[url('~/assets/svg/header.svg')] bg-clip-padding">
     <div id="navbar" class="m-4 lg:flex grid grid-cols-2 items-center gap-x-6 gap-y-2 tracking-wider">
       <ULink to="/" class="lg:mr-6">
-        <NavItem class="lg:text-3xl">
+        <LogoSmall class="lg:flex hidden" />
+        <NavItem class="lg:hidden block">
           <template #shifts>
-            <span class="lg:block hidden text-kgpf-yellow-500">KG</span>
-            <UIcon name="lg:hidden i-heroicons-home-16-solid" />
+            <UIcon name="i-heroicons-home-16-solid" />
           </template>
-          <span class="lg:block hidden text-white">PF</span>
-          <span class="lg:hidden">Home</span>
+          Home
         </NavItem>
       </ULink>
+      <!-- <ULink to="/" class="lg:mr-6"> -->
+      <!--   <NavItem class="lg:text-3xl"> -->
+      <!--     <template #shifts> -->
+      <!--       <span class="lg:block hidden text-kgpf-yellow-500">KG</span> -->
+      <!--       <UIcon name="lg:hidden i-heroicons-home-16-solid" /> -->
+      <!--     </template> -->
+      <!--     <span class="lg:block hidden text-white">PF</span> -->
+      <!--     <span class="lg:hidden">Home</span> -->
+      <!--   </NavItem> -->
+      <!-- </ULink> -->
       <UDropdown
         :items="SERVICE_ITEMS"
         :ui="{ width: 'w-auto', item: { base: 'hover:text-gray-900' } }"
