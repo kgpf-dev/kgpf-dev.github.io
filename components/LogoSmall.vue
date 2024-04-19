@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center group">
+  <div class="flex items-baseline group">
     <LogoSmallK
       width="25"
       height

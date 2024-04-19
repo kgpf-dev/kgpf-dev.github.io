@@ -24,6 +24,8 @@
         <hr v-else class="not-prose mt-6 mb-12">
       </template>
       <slot />
+      <div>
+      </div>
     </main>
   </UContainer>
 </template>
