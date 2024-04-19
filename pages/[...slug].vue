@@ -19,10 +19,17 @@
 <script setup lang="ts">
 import type { LayoutKey } from '#build/types/layouts'
 
+// const headMeta = useHeadMeta()
 const config = useRuntimeConfig()
 const { page } = useContent()
 
-// Page not found, set correct status code on SSR
+// Bound data accessible within content.
+const pageData = ref({
+  phoneLabel: config.public.kgpf.phone.label,
+  phoneHref: config.public.kgpf.phone.href,
+})
+
+// Page not found, set correct status code on SSR.
 if (!page.value && import.meta.server) {
   const event = useRequestEvent()
   if (event) {
@@ -30,10 +37,8 @@ if (!page.value && import.meta.server) {
   }
 } else if (config.public.content.contentHead) {
   useContentHead(page.value!)
+  // headMeta.value = {
+  //   title: page.value!.title,
+  // }
 }
-
-const pageData = ref({
-  phoneLabel: config.public.kgpf.phone.label,
-  phoneHref: config.public.kgpf.phone.href,
-})
 </script>

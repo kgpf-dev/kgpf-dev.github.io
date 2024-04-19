@@ -1,6 +1,6 @@
 <template>
-  <UContainer>
-    <main class="mt-6 lg:mb-12 mb-6 prose prose-sm sm:prose-base">
+  <div class="px-4 sm:px-6 lg:px-8">
+    <main class="w-[65ch] mt-6 lg:mb-12 mb-6 prose prose-sm sm:prose-base max-w-none">
       <template v-if="showTitle || prevInfo || nextInfo || showToc">
         <h1 v-if="showTitle" class="not-prose mt-6 mb-4 text-2xl text-kgpf-blue-800">
           {{ page.title }}
@@ -14,20 +14,19 @@
             <TocItem v-for="link in toc.links" :key="link.text" :link="link" />
           </ul>
         </div>
-        <img
-          v-if="page.banner"
-          :src="page.banner.src"
-          :alt="page.banner.alt"
-          class="w-full h-[2in] object-cover rounded shadow"
-          :class="page.banner.class"
-        >
+        <template v-if="page?.banner">
+          <img
+            :src="page.banner.src"
+            :alt="page.banner.alt"
+            class="w-full h-[2in] object-cover rounded shadow"
+            :class="page.banner.class"
+          >
+        </template>
         <hr v-else class="not-prose mt-6 mb-12">
       </template>
       <slot />
-      <div>
-      </div>
     </main>
-  </UContainer>
+  </div>
 </template>
 
 <script lang="ts">
@@ -60,15 +59,13 @@ const navInfo = (page: Ref<any>, nav: Ref<any>): NavInfo | undefined => {
 </script>
 
 <script lang="ts" setup>
+// const headMeta = useHeadMeta()
 const { page, prev, next, toc } = useContent() as { [key: string]: Ref }
 
-const showTitle = computed(() => !!(page.value?.title && !page.value.noTitle))
+// const showTitle = computed(() => !!(headMeta.value.title && !page.value?.noTitle))
+const showTitle = computed(() => !!(page.value?.title && !page.value?.noTitle))
+
 const prevInfo = computed(() => navInfo(page, prev))
 const nextInfo = computed(() => navInfo(page, next))
 const showToc = computed(() => !!(page.value?.toc && toc.value?.links?.length))
 </script>
-
-<style lang="postcss">
-#toc {
-}
-</style>
