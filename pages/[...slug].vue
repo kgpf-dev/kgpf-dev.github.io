@@ -1,6 +1,6 @@
 <template>
   <div class="document-driven-page">
-    <NuxtLayout :name="page!.layout as LayoutKey || 'default'">
+    <NuxtLayout :name="page?.layout as LayoutKey || 'default'">
       <ContentRenderer
         v-if="page"
         :key="(page as any)._id"

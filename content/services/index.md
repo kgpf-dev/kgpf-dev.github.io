@@ -20,7 +20,7 @@ title: Client services
 :IconLink{label="Special District Services" to="/services/special-districts" icon="i-heroicons-building-library"}
 :::
 
-<!-- Arbitrage Compliance -->
+<!-- Developer Fee Consultation -->
 :::card{:ui='{"body": {"base": "text-sm"}}'}
 [Assistance to school districts]{.small-caps} in implementing locally funded financing mechanisms that provide
 towards their unique facility needs.
@@ -30,7 +30,7 @@ towards their unique facility needs.
 - Combined annual and five-year developer fee reports
 
 #header
-:IconLink{label="Developer Fee Studies" to="/services/fee-studies" icon="i-heroicons-wrench-screwdriver"}
+:IconLink{label="Developer Fee Consultation" to="/services/developer-fee-consultation" icon="i-heroicons-wrench-screwdriver"}
 :::
 
 <!-- Arbitrage Compliance -->

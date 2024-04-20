@@ -68,12 +68,14 @@ const items: VNode[] = [
     class: 'object-cover',
     draggable: false,
   }),
+  // firetruck
   h('img', {
     src: '/img/school-interior.jpg',
     alt: 'School (interior)',
     class: 'object-cover',
     draggable: false,
   }),
+  // water district
   h('img', {
     src: '/img/school-exterior.jpg',
     alt: 'School (exterior)',

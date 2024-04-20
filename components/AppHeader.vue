@@ -1,7 +1,7 @@
 <template>
   <div id="header" class="w-full flex justify-center bg-kgpf-blue-900 bg-[url('~/assets/svg/header.svg')] bg-clip-padding">
-    <div id="navbar" class="m-4 lg:flex grid grid-cols-2 items-center gap-x-6 gap-y-2 tracking-wider">
-      <ULink to="/" class="lg:mr-6">
+    <div id="navbar" class="m-4 lg:flex grid grid-cols-2 items-center justify-start gap-x-8 gap-y-2 tracking-wider">
+      <ULink to="/" class="col-span-2 justify-self-center">
         <LogoSmall class="lg:flex hidden" />
         <NavItem class="lg:hidden block">
           <template #shifts>
@@ -51,6 +51,7 @@
           <span>Owner FAQ</span>
         </NavItem>
       </ULink>
+      <!--
       <ULink to="/glossary">
         <NavItem class="gap-1">
           <template #shifts>
@@ -59,6 +60,7 @@
           <span>Glossary</span>
         </NavItem>
       </ULink>
+      -->
       <ULink to="/leadership">
         <NavItem class="gap-1">
           <template #shifts>
@@ -90,8 +92,8 @@ const SERVICE_ITEMS = [
   ],
   [
     {
-      label: 'Developer Fee Studies',
-      to: '/services/fee-studies',
+      label: 'Developer Fee Consultation',
+      to: '/services/developer-fee-consultation',
       icon: 'i-heroicons-wrench-screwdriver',
     },
   ],

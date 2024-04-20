@@ -1,8 +1,8 @@
 <template>
-  <div class="px-4 sm:px-6 lg:px-8">
-    <main class="w-[65ch] mt-6 lg:mb-12 mb-6 prose prose-sm sm:prose-base max-w-none">
+  <UContainer class="mt-6 mb-12">
+    <main class="prose prose-sm sm:prose-base">
       <template v-if="showTitle || prevInfo || nextInfo || showToc">
-        <h1 v-if="showTitle" class="not-prose mt-6 mb-4 text-2xl text-kgpf-blue-800">
+        <h1 v-if="showTitle" class="not-prose mb-4 text-2xl text-kgpf-blue-800">
           {{ page.title }}
         </h1>
         <PrevNext v-if="prevInfo || nextInfo" :prev="prevInfo" :next="nextInfo" class="not-prose text-lg" />
@@ -14,19 +14,19 @@
             <TocItem v-for="link in toc.links" :key="link.text" :link="link" />
           </ul>
         </div>
-        <template v-if="page?.banner">
+        <div v-if="page?.banner" class="w-full h-[2in] my-8 flex justify-center rounded shadow overflow-hidden">
           <img
             :src="page.banner.src"
             :alt="page.banner.alt"
-            class="w-full h-[2in] object-cover rounded shadow"
             :class="page.banner.class"
+            class="w-full object-cover"
           >
-        </template>
+        </div>
         <hr v-else class="not-prose mt-6 mb-12">
       </template>
       <slot />
     </main>
-  </div>
+  </UContainer>
 </template>
 
 <script lang="ts">

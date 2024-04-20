@@ -14,8 +14,9 @@ const RUNTIME_CONFIG = {
       publicKey: 'RGG5-wqs3eeIeXasy',
     },
     kgpf: {
-      phone: makeTel('(760) 510-0290'),
+      phone: makeTel('(888) 510-0290'),
       fax: makeTel('(760) 510-0288'),
+      // tollFree: makeTel('(888) 510-0290'),
       office: {
         address: '334 Via Vera Cruz, Suite 256',
         cityStateZip: 'San Marcos, California 92078',

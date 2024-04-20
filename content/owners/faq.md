@@ -30,17 +30,15 @@ or [send us a message through this website](/contact).
 
 ---
 
-Special Charge?
+Special Charges
 ---------------
 
-[What is fixed charge special assessment?]{.question}
+[What are special charges?]{.question}
 
 Property tax law allows for the collection of special assessments levied by local government
-entities through the property tax bills. Examples of these assessments include special taxes such as
+entities. Examples of these assessments include special taxes such as
 Mello-Roos or charges assessed by a variety of special districts to pay for specific
 additional services or benefits to properties located within the districts’ boundaries.
-
-[More on Special Charges.](/glossary#special-charge)
 
 [When do I pay these charges?]{.question}
 
@@ -56,7 +54,7 @@ charge.
 
 [What happens when I sell my property?]{.question}
 
-Special charges are levied against the land and it remains with the property if a sale occurs.
+Special charges are levied against the parcel or property and it remains with the property if a sale occurs.
 
 [What happens when my property’s value increase or decrease?]{.question}
 
@@ -64,46 +62,42 @@ By law, special charges are not based on property value.
 
 ---
 
-Assessment District?
---------------------
+Special Districts
+-----------------
 
-Assessment districts (AD) are used by public agencies as a financing method for various public
-improvements.
+The term <q>special district</q> refers to any of the following:
 
-[More on Assessment Districts.](/glossary#assessment-districts)
+- [Community Facilities Districts](#community-facilities-districts)
+- [Assessment Districts](#assessment-districts)
+- [Benefit Assessment Districts](#assessment-districts)
+- [Landscaping and Lighting Districts](#landscaping-and-lighting-districts)
 
-[What does it pay for?]{.question}
-
-Authorized improvements and services include but not limited to water infrastructure, electrical,
-gas and lighting infrastructure, public transit facilities, and other basic infrastructure needs.
-
----
-
-Benefit Assessment District?
-----------------------------
-
-Benefit Assessment Act of 1982 is a financing tool used by local governments to pay for various
-services. The assessments are based on the concept of assessing only those properties that directly
-benefit from the services financed by the *benefit assessment district* (AD).
-
-[What does it pay for?]{.question}
-
-Authorized services include drainage, flood control, street lighting, and street maintenance.
+See below for details on each type of special district.
 
 ---
 
-Community Facilities District?
-------------------------------
+### Community Facilities Districts
 
-A *community facilities district* (CFD), most commonly known as the Mello-Roos, comes from
+A *Community Facilities District* (CFD), most commonly known as the Mello-Roos, comes from
 Senator Henry Mello and Assemblyman Mike Roos who ushered the passage of the <q>Mello-Roos Community
-Facilities Act of 1982</q> (<q>the Act</q>). A community facilities district provides counties,
+Facilities Act of 1982</q> (<q>the Act</q>). A Community Facilities District provides counties,
 cities, school districts, joint powers authority and other special districts and/or local agencies a
 way to finance certain public improvements and services.
 
-[More on Community Facilities Districts.](/glossary#community-facilities-districts)
+::card
+Created to provide an alternate method of financing needed for public improvements and services.
+Taxes are secured by a lien on CFD properties, and are collected on an annual basis.
 
-[What does it pay for?]{.question}
+The Mello-Roos Act allow counties, cities, school districts, joint powers authority and other
+special districts to establish *Community Facilities Districts* (CFD), with which they can finance
+certain public improvements and services.
+
+#header
+[The Mello-Roos Community Facilities Act of 1982]{.block .text-lg}
+[California Gov. Code § 53311-53368.3](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=2.&chapter=2.5.&part=1.&lawCode=GOV&title=5.&article=1.){.text-sm}
+::
+
+[What do Community Facilities Districts pay for?]{.question}
 
 Authorized improvements and services include but not limited to:
 
@@ -135,16 +129,94 @@ Authorized improvements and services include but not limited to:
 
 ---
 
-Landscaping and Lighting District?
-----------------------------------
+### Assessment Districts
+
+*Assessment districts* (AD) are used by public agencies as a financing method for various public
+improvements.
+
+<!--
+*Assessment Districts* (AD) have been in existence since the early 1900s and are an alternative
+method of financing certain public improvements; however, unlike Community Facilities Districts,
+only special (as opposed to general) benefit may be assessed.
+
+Assessment districts are structured as such:
+
+::div{.sm:grid .sm:grid-cols-2 .sm:gap-4}
+:::div
+- Only special benefit can be assessed
+- Limited flexibility in providing exemptions
+- Lien placed on property
+- Property owner ballot protest procedure:
+  - Ballot weighted on assessment amount
+  - Mailed ballots
+  - Simple majority (based on weighted assessment) required to form AD
+:::
+:::div
+- Requires an <q>engineer’s report</q> that:
+  - Describes boundaries of the AD
+  - Determines special benefit
+  - Defines assessment amounts
+  - Defines method of apportioning assessments
+:::
+::
+-->
+
+<!--
+::card
+Can be used by counties, cities and other municipal governments for the funding of infrastructure
+projects and also fund maintenance of improvements.
+
+#header
+[The Improvement Act of 1911]{.block .text-lg}
+[California SHC. Code § 5000-6794](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=SHC&division=7.&title=&part=1.&chapter=&article=){.text-sm}
+::
+-->
+
+::card
+Can be used by counties, cities, other special districts and joint powers authorities for
+the funding of basic infrastructure needs, water, electrical, gas and lighting
+infrastructures, and public transit facilities.
+
+#header
+[The Municipal Improvement Act of 1913]{.block .text-lg}
+[California SHC. Code § 10000-10706](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=SHC&division=12.&title=&part=&chapter=1.&article=){.text-sm}
+::
+
+::card
+Usually used in conjunction with the first two aforementioned acts to finance the improvements
+through the issuance of bonds.
+
+#header
+[The Improvement Bond Act of 1915]{.block .text-lg}
+[California SHC. Code § 8500-8514](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=SHC&division=10.&title=&part=1.&chapter=&article=){.text-sm}
+::
+
+[What do Assessment Districts pay for?]{.question}
+
+Authorized improvements and services include but not limited to water infrastructure, electrical,
+gas and lighting infrastructure, public transit facilities, and other basic infrastructure needs.
+
+---
+
+### Benefit Assessment Districts
+
+The Benefit Assessment Act of 1982 is a financing tool used by local governments to pay for various
+services. The assessments are based on the concept of assessing only those properties that directly
+benefit from the services financed by the *Benefit Assessment District* (AD).
+
+[What do Benefit Assessment Districts pay for?]{.question}
+
+Authorized services generally include drainage, flood control, street lighting, and street maintenance.
+
+---
+
+### Landscaping and Lighting Districts
 
 The Landscaping and Lighting District Act of 1972 is a financing tool used by various local
 governments to pays for the maintenance of landscaping, lighting and other improvements in public
 areas. Only the properties that benefit directly from these improvements are assessed.
 
-[More on Landscaping and Lighting Districts.](/glossary#landscaping-and-lighting-districts)
-
-[What does it pay for?]{.question}
+[What do Landscaping and Lighting Districts pay for?]{.question}
 
 Authorized improvements and services include but are not limited to: installation and maintenance of
 lighting (general lighting and/or traffic lights), landscaping, recreational playgrounds including
@@ -153,8 +225,8 @@ halls. For larger improvements, notes or bonds may be issued for financing.
 
 ---
 
-Proposition 218?
-----------------
+Proposition 218
+---------------
 
 California voters passed Proposition 218 (Right to Vote on Taxes Act) in November of 1996 which
 requires voters to approve new charges and increases on existing charges. Therefore, public agencies
