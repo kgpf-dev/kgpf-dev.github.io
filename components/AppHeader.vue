@@ -108,7 +108,7 @@ const SERVICE_ITEMS = [
     {
       label: 'GIS Services',
       to: '/services/gis',
-      icon: 'i-heroicons-globe-americas',
+      icon: 'i-heroicons-map',
     },
   ],
   [

@@ -53,7 +53,7 @@ needs.
 - Student generation rate analyses
 
 #header
-:IconLink{label="GIS Services" to="/services/gis" icon="i-heroicons-globe-americas"}
+:IconLink{label="GIS Services" to="/services/gis" icon="i-heroicons-map"}
 :::
 
 <!-- Arbitrage Compliance -->
