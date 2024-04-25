@@ -9,7 +9,7 @@
         <div>{{ office.cityStateZip }}</div>
       </a>
       <div class="flex flex-col items-center">
-        <span>Copyright © 2023</span>
+        <span>Copyright © {{ copyrightYear }}</span>
         <span>Koppel & Gruber Public Finance</span>
         <span>All Rights Reserved</span>
       </div>
@@ -22,5 +22,5 @@
 </template>
 
 <script lang="ts" setup>
-const { public: { kgpf: { phone, fax, office } } } = useRuntimeConfig()
+const { public: { kgpf: { copyrightYear, phone, fax, office } } } = useRuntimeConfig()
 </script>

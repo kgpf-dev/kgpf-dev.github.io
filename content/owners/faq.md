@@ -16,7 +16,7 @@ Annual Administration refers to the process of calculating the [special
 taxes/charges][sc] or fees for these various Special Districts and placing
 these on the County Tax Roll to be included on the Annual Tax Bill.
 
-If you see our toll-free phone number :my-link{:to="phoneHref" :label="phoneLabel"} next to a line item
+If you see our toll-free phone number :content-link{:to="phoneTollFreeHref" :label="phoneTollFreeLabel"} next to a line item
 on your property tax bill we are the administrators for that particular special tax or assessment.
 
 To get in contact with us you can call our toll-free phone number

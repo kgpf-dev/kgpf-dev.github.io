@@ -27,6 +27,10 @@ const { page } = useContent()
 const pageData = ref({
   phoneLabel: config.public.kgpf.phone.label,
   phoneHref: config.public.kgpf.phone.href,
+  phoneTollFreeLabel: config.public.kgpf.phoneTollFree.label,
+  phoneTollFreeHref: config.public.kgpf.phoneTollFree.href,
+  faxLabel: config.public.kgpf.fax.label,
+  faxHref: config.public.kgpf.fax.href,
 })
 
 // Page not found, set correct status code on SSR.

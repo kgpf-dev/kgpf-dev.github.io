@@ -5,11 +5,9 @@
     <!-- Koppel & Gruber Public Finance has specialized in financial consulting to public agencies in California since 2004. -->
     <div class="max-w-screen-lg flex flex-col items-center gap-3">
       <UDivider class="lg:hidden" />
-      <div class="flex flex-wrap justify-center gap-x-1.5 text-xl text-center small-caps">
-        <span>California</span>
-        <span>public finance consultant</span>
-        <span>since 2004</span>
-      </div>
+      <h2 class="text-xl sm:text-2xl text-center small-caps">
+        Servicing California since 2004
+      </h2>
       <UDivider :icon="DIVIDER_ICON" />
       <div class="contents sm:text-lg text-justify">
         <p>
