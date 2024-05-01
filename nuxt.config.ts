@@ -3,12 +3,13 @@ const makeTel = (label: string) => {
   return { label, href }
 }
 
-const SEO = {
+const SITE = {
+  // WARNING: Change the URL once custom domain is setup
   url: (
     // 'kgpf.net'
     'kgpf-dev.github.io'
     // 'localhost:3000'
-  ), // WARNING:
+  ),
   name: 'Koppel & Gruber Public Finance',
   description: 'Servicing California since 2004',
   icon: '/favicon.ico',
@@ -17,7 +18,7 @@ const SEO = {
 
 const RUNTIME_CONFIG = {
   public: {
-    seo: SEO,
+    site: SITE,
     emailjs: {
       serviceId: 'service_cyfvchj',
       templateId: 'template_l4rw42j',
@@ -46,9 +47,9 @@ export default defineNuxtConfig({
   },
   runtimeConfig: RUNTIME_CONFIG,
   site: {
-    url: SEO.url,
-    name: SEO.name,
-    description: SEO.description,
+    url: SITE.url,
+    name: SITE.name,
+    description: SITE.description,
   },
   app: {
     head: {
@@ -77,7 +78,6 @@ export default defineNuxtConfig({
     'nuxt-icon',
   ],
   content: { documentDriven: true },
-  // site: { url: 'http://192.168.1.92:3000' }, // WARNING:
   // nitro: {
   //   prerender: {
   //     crawlLinks: true,

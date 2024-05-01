@@ -21,21 +21,21 @@ import type { LayoutKey } from '#build/types/layouts'
 
 const { page } = useContent()
 const config = useRuntimeConfig()
-const seo = config.public.seo
+const site = config.public.site
 
 useSeoMeta({
   // ogTitle: 'Foo',
-  // ogTitle: seo.name,
-  // ogImage: seo.image,
-  twitterImage: seo.image,
+  // ogTitle: site.name,
+  // ogImage: site.image,
+  twitterImage: site.image,
 })
 
 defineOgImageComponent('NuxtSeo', {
-  title: seo.name,
+  title: site.name,
   description: page.value?.title,
   icon: 'i-heroicons-building-library',
   theme: '#3e4f82',
-  siteName: seo.url,
+  siteName: site.url,
 })
 
 // Bound data accessible within content.

@@ -1,5 +1,5 @@
 <template>
-  <UCard>
+  <UCard class="not-prose">
     <div class="space-y-4">
       <UForm
         id="contact-form"
@@ -11,7 +11,7 @@
         @submit="onSubmit"
       >
         <UFormGroup label="Name" name="name" required>
-          <UInput v-model="state.name" :disabled="disabled" placeholder="Benjamin Button" />
+          <UInput v-model="state.name" :disabled="disabled" placeholder="Your name" />
         </UFormGroup>
         <div class="sm:grid sm:grid-cols-2 sm:gap-4 contents">
           <UFormGroup label="Email" name="email">
@@ -27,7 +27,7 @@
         <UFormGroup label="Your message" name="message" required>
           <UTextarea v-model="state.message" :disabled="disabled" placeholder="..." resize />
         </UFormGroup>
-        <UFormGroup label="Preferred method of contact">
+        <UFormGroup label="Preferred method of contact" help="If both email and phone are provided.">
           <URadioGroup
             v-model="state.preferred_contact"
             :options="PREFERRED_CONTACT"
@@ -83,7 +83,7 @@ const schema = z.object({
   message: z.string().trim().min(1, 'Message cannot be empty.'),
   email: z.string().email('Invalid email').optional(),
   phone_number: z.string().optional(),
-  preferred_contact: PreferredContact,
+  preferred_contact: PreferredContact.optional(),
 }).refine(
   data => (!!data.email || !!data.phone_number),
   'Please provide an email or phone number.',
@@ -169,8 +169,16 @@ const state = reactive<Partial<Schema>>({
   message: undefined,
   email: undefined,
   phone_number: undefined,
-  preferred_contact: PreferredContact.enum.Either,
+  preferred_contact: undefined,
   ...(DEBUG && DEBUG_DEFAULT_STATE),
+})
+
+watch(state, (state) => {
+  if (!(state.email && state.phone_number)) {
+    state.preferred_contact = undefined
+  } else if (!state.preferred_contact) {
+    state.preferred_contact = PreferredContact.enum.Either
+  }
 })
 
 if (DEBUG) {
