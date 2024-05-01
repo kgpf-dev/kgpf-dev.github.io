@@ -3,11 +3,19 @@ const makeTel = (label: string) => {
   return { label, href }
 }
 
+const SEO = {
+  // url: 'localhost:3000',
+  // url: 'kgpf.net',
+  url: 'kgpf-dev.github.io',
+  name: 'Koppel & Gruber Public Finance',
+  description: 'Servicing California since 2004',
+  icon: '/favicon.ico',
+  image: '/img/logo/small.png',
+}
+
 const RUNTIME_CONFIG = {
   public: {
-    seo: {
-      title: 'K&G Public Finance',
-    },
+    seo: SEO,
     emailjs: {
       serviceId: 'service_cyfvchj',
       templateId: 'template_l4rw42j',
@@ -30,12 +38,29 @@ const RUNTIME_CONFIG = {
 export default defineNuxtConfig({
   devtools: {
     enabled: (
-      true
+      (true)
       // false
     ),
   },
   runtimeConfig: RUNTIME_CONFIG,
+  site: {
+    url: SEO.url,
+    name: SEO.name,
+    description: SEO.description,
+  },
   app: {
+    head: {
+      htmlAttrs: { lang: 'en' },
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      // link: [
+      //   {
+      //     rel: 'icon',
+      //     type: 'image/x-icon',
+      //     href: '/favicon.ico',
+      //   },
+      // ],
+    },
     pageTransition: {
       name: 'page',
       mode: 'out-in',
@@ -46,9 +71,9 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/ui',
-    // '@nuxtjs/sitemap',
+    '@nuxtjs/seo',
+    'nuxt-icon',
   ],
-  ssr: true,
   content: { documentDriven: true },
   // site: { url: 'http://192.168.1.92:3000' }, // WARNING:
   // nitro: {

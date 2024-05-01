@@ -3,14 +3,21 @@ title: Frequently Asked Questions
 toc: true
 ---
 
+[sd-admin]: /services/special-districts#administration
+[cfd]: #community-facilities-districts
+[ad]: #assessment-districts
+[bd]: #benefit-assessment-districts
+[lld]: #landscaping-and-lighting-districts
+[sc]: #special-charges
+
 What is K&G Public Finance's role?
 ----------------------------------
 
 We specialize in financial consulting to public agencies, and one of the services we provide is the
-[annual administration of Special Districts][services-district-admin]. Such districts include [Community Facilities
+[annual administration of Special Districts][sd-admin]. Such districts include [Community Facilities
 Districts][cfd] (commonly referred to as Mello-Roos districts), [Landscaping and Lighting
-Districts][lld], and 1913 Act [Assessment Districts][ad], as well as Benefit Fee Assessments and
-other fixed charge special assessments.
+Districts][lld], and 1913 Act [Assessment Districts][ad], as well as [Benefit Fee Assessments][bd]
+and other fixed charge special assessments.
 
 Annual Administration refers to the process of calculating the [special
 taxes/charges][sc] or fees for these various Special Districts and placing
@@ -21,12 +28,6 @@ on your property tax bill we are the administrators for that particular special 
 
 To get in contact with us you can call our toll-free phone number
 or [send us a message through this website](/contact).
-
-[services-district-admin]: /services/special-districts#administration
-[cfd]: #community-facilities-district
-[lld]: #landscaping-and-lighting-district
-[ad]: #assessment-district
-[sc]: #special-charge
 
 ---
 
@@ -67,10 +68,10 @@ Special Districts
 
 The term <q>special district</q> refers to any of the following:
 
-- [Community Facilities Districts](#community-facilities-districts)
-- [Assessment Districts](#assessment-districts)
-- [Benefit Assessment Districts](#assessment-districts)
-- [Landscaping and Lighting Districts](#landscaping-and-lighting-districts)
+- [Community Facilities Districts][cfd]
+- [Assessment Districts][ad]
+- [Benefit Assessment Districts][bd]
+- [Landscaping and Lighting Districts][lld]
 
 See below for details on each type of special district.
 
@@ -183,7 +184,7 @@ infrastructures, and public transit facilities.
 ::
 
 ::card
-Usually used in conjunction with the first two aforementioned acts to finance the improvements
+Usually used in conjunction with the Municipal Improvement Act of 1913 to finance the improvements
 through the issuance of bonds.
 
 #header

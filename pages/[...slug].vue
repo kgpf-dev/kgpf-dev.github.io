@@ -19,9 +19,23 @@
 <script setup lang="ts">
 import type { LayoutKey } from '#build/types/layouts'
 
-// const headMeta = useHeadMeta()
-const config = useRuntimeConfig()
 const { page } = useContent()
+const config = useRuntimeConfig()
+const seo = config.public.seo
+
+useSeoMeta({
+  // ogTitle: 'Foo',
+  // ogTitle: seo.name,
+  // ogImage: seo.image,
+  twitterImage: seo.image,
+})
+
+defineOgImageComponent('NuxtSeo', {
+  title: seo.name,
+  description: page.value?.title || seo.description,
+  icon: 'i-heroicons-building-library',
+  theme: '#3e4f82',
+})
 
 // Bound data accessible within content.
 const pageData = ref({
@@ -41,8 +55,5 @@ if (!page.value && import.meta.server) {
   }
 } else if (config.public.content.contentHead) {
   useContentHead(page.value!)
-  // headMeta.value = {
-  //   title: page.value!.title,
-  // }
 }
 </script>

@@ -11,11 +11,9 @@
     </p>
   </div>
 </template>
+
 <script lang="ts" setup>
 useHead({ title: '404 Not found' })
 
 const { path } = useRoute()
 </script>
-
-<style lang="postcss" scoped>
-</style>

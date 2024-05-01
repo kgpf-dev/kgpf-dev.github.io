@@ -1,7 +1,5 @@
 ---
 title: Leadership
-sitemap:
-  loc: /leadership
 ---
 
 [Lyn Gruber]{.mr-4 .text-kgpf-blue-800 .text-xl}

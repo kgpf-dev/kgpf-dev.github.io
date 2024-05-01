@@ -59,10 +59,8 @@ const navInfo = (page: Ref<any>, nav: Ref<any>): NavInfo | undefined => {
 </script>
 
 <script lang="ts" setup>
-// const headMeta = useHeadMeta()
 const { page, prev, next, toc } = useContent() as { [key: string]: Ref }
 
-// const showTitle = computed(() => !!(headMeta.value.title && !page.value?.noTitle))
 const showTitle = computed(() => !!(page.value?.title && !page.value?.noTitle))
 
 const prevInfo = computed(() => navInfo(page, prev))
