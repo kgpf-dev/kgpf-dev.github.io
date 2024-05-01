@@ -32,9 +32,10 @@ useSeoMeta({
 
 defineOgImageComponent('NuxtSeo', {
   title: seo.name,
-  description: page.value?.title || seo.description,
+  description: page.value?.title,
   icon: 'i-heroicons-building-library',
   theme: '#3e4f82',
+  siteName: seo.url,
 })
 
 // Bound data accessible within content.

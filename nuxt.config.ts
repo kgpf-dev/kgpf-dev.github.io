@@ -4,9 +4,11 @@ const makeTel = (label: string) => {
 }
 
 const SEO = {
-  // url: 'localhost:3000',
-  // url: 'kgpf.net',
-  url: 'kgpf-dev.github.io',
+  url: (
+    // 'kgpf.net'
+    'kgpf-dev.github.io'
+    // 'localhost:3000'
+  ), // WARNING:
   name: 'Koppel & Gruber Public Finance',
   description: 'Servicing California since 2004',
   icon: '/favicon.ico',
@@ -38,7 +40,7 @@ const RUNTIME_CONFIG = {
 export default defineNuxtConfig({
   devtools: {
     enabled: (
-      (true)
+      true
       // false
     ),
   },
@@ -53,13 +55,13 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'en' },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      // link: [
-      //   {
-      //     rel: 'icon',
-      //     type: 'image/x-icon',
-      //     href: '/favicon.ico',
-      //   },
-      // ],
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/favicon.ico',
+        },
+      ],
     },
     pageTransition: {
       name: 'page',
