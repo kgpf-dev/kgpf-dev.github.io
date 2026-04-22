@@ -2,29 +2,26 @@
 # - https://github.com/actions/deploy-pages#usage
 # - https://nitro.unjs.io/deploy/providers/github-pages
 name: Deploy to GitHub Pages
-
 on:
   workflow_dispatch:
   push:
     branches:
       - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - run: corepack enable
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: "18"
       - run: pnpm install
       - run: pnpm nuxt build --preset github_pages
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./.output/public
-
   deploy:
     needs: build
     permissions:
@@ -37,5 +34,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
 
