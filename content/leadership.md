@@ -39,6 +39,11 @@ Business Administration from the University of Washington.
 
 ---
 
+[Jeff Gruber]{.mr-4 .text-kgpf-blue-800 .text-xl}
+[Partner]{.text-kgpf-yellow-500 .small-caps}
+
+---
+
 [Doug Floyd]{.mr-4 .text-kgpf-blue-800 .text-xl}
 [Vice President]{.text-kgpf-yellow-500 .small-caps}
 
