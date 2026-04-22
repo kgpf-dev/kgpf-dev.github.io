@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: "18"
-      - run: pnpm sync
+      - run: pnpm install --frozen-lockfile
       - run: pnpm nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
