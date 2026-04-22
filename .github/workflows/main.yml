@@ -15,7 +15,7 @@ jobs:
       - run: corepack enable
       - uses: actions/setup-node@v6
         with:
-          node-version: "18"
+          node-version: "21"
       - run: pnpm install
       - run: pnpm nuxt build --preset github_pages
       - name: Upload artifact
