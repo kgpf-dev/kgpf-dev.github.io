@@ -25,7 +25,7 @@ const RUNTIME_CONFIG = {
       publicKey: 'RGG5-wqs3eeIeXasy',
     },
     kgpf: {
-      copyrightYear: 2024,
+      copyrightYear: 2026,
       phone: makeTel('(760) 510-0290'),
       phoneTollFree: makeTel('(888) 510-0290'),
       fax: makeTel('(760) 510-0288'),
