@@ -10,7 +10,7 @@
       </a>
       <div class="flex flex-col items-center">
         <span>Copyright © {{ copyrightYear }}</span>
-        <span>Koppel & Gruber Public Finance</span>
+        <span>Koppel & Gruber Public Finance, LLC</span>
         <span>All Rights Reserved</span>
       </div>
       <div class="flex flex-col lg:items-end items-center">
