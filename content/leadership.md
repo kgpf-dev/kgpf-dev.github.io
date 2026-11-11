@@ -43,7 +43,7 @@ Business Administration from the University of Washington.
 [Principal]{.text-kgpf-yellow-500 .small-caps}
 
 <div class="sm:ml-5 sm:mt-0 my-5 sm:float-right flex justify-center">
-  <img src="/img/people/jeff.png" alt="Jeff Gruber" class="max-h-[2.5in] rounded shadow">
+  <img src="/img/people/jeff.jpg" alt="Jeff Gruber" class="max-h-[2.5in] rounded shadow">
 </div>
 
 Jeff Gruber brings more than 15 years of experience managing technical projects, operational improvements, and organizational change initiatives for public and private-sector clients. Before joining Koppel & Gruber Public Finance, Jeff worked in technology modernization consulting for the Federal and State Governments, where he coordinated multidisciplinary teams, monitored project risks and issues, and worked closely with client stakeholders. Jeff specializes in developer fee studies and all aspects of CFD Administration. His background also includes implementing operational software in educational settings, managing professional-services personnel, and supporting contract administration.
